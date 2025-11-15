@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(test:*)",
+      "Bash(npm install)",
+      "Bash(npm audit:*)",
+      "Bash(npm run dev:*)",
+      "Bash(lsof:*)",
+      "Bash(kill:*)",
+      "Bash(echo:*)",
+      "Bash(/bin/bash -c 'source ~/.zshrc 2>/dev/null || source ~/.bash_profile 2>/dev/null; which node; which npm')",
+      "Bash(if [ -f ~/.zshrc ])",
+      "Bash(then grep -E \"(nvm|node|npm)\" ~/.zshrc)",
+      "Bash(fi)",
+      "Bash(/opt/homebrew/bin/npm run dev)",
+      "Bash(export PATH=\"/opt/homebrew/bin:$PATH\")",
+      "Bash(/opt/homebrew/bin/npm install @supabase/supabase-js)",
+      "Bash(npm install:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light theme (default) */
+:root {
+  --bg-start: #f8fafc;
+  --bg-end: #e2e8f0;
+  --fg: #0f172a;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-border: rgba(15, 23, 42, 0.1);
+  --accent: #06b6d4; /* cyan-500 */
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg-start: #111827;
+  --bg-end: #020617;
+  --fg: #f9fafb;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --accent: #22d3ee; /* cyan-400 */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(circle at top, var(--bg-start) 0%, var(--bg-end) 55%);
+  color: var(--fg);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial;
+  transition: background 0.3s ease, color 0.3s ease;
+}
