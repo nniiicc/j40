@@ -280,7 +280,7 @@ export default function EntryForm({ onSubmit }: { onSubmit: (entry: FormEntry) =
 
       <div className="flex justify-end pt-1">
         <Button type="submit" size="sm" disabled={isUploading}>
-          {isUploading ? "Uploading..." : "Add to wall"}
+          {isUploading ? "Uploading..." : "Submit"}
         </Button>
       </div>
     </form>

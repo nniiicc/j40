@@ -15,7 +15,10 @@
       "Bash(/opt/homebrew/bin/npm run dev)",
       "Bash(export PATH=\"/opt/homebrew/bin:$PATH\")",
       "Bash(/opt/homebrew/bin/npm install @supabase/supabase-js)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

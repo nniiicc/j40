@@ -105,22 +105,39 @@ export default function HomePage() {
           <div className="space-y-12">
             {/* Hero + Form Section */}
             <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-8 lg:gap-10 items-start">
-              <div className="space-y-6">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.35em] opacity-60 mb-3"></p>
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
-                    What color is {" "}
-                    <span className="text-cyan-400">Lowd?</span>
-                  </h1>
-                  <p className="text-sm sm:text-base opacity-80 leading-relaxed mt-3 sm:mt-4">
-                    Choose a color that represents your particular experience of Julia and add a birthday message. Scroll down to see how much we agree on the answer, or add a photo that inspired your choice. You can sort results by year to see whether people who met Julia at different times in her life chose different colors.
-                  </p>
-                  <div className="mt-4">
-                    <Link href="/about">
-                      <Button variant="primary" size="sm">
-                        About
-                      </Button>
-                    </Link>
+              <div className="flex flex-col">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">
+                  What color is {" "}
+                  <span className="text-cyan-400">Lowd?</span>
+                </h1>
+                <div className="flex-1 flex flex-col justify-center">
+                  <div className="text-xs sm:text-sm opacity-80 leading-relaxed space-y-3">
+                    <p><strong>TLDR:</strong> Chose the color that captures your experience of Julia Lowd, upload a photo, and leave her a birthday message.</p>
+                    <p>
+                      <strong>The Experiment:</strong> A recent cognitive science study asked people to relate abstract concepts to colors: What color is anger? What color is math? What color is gricker? (a completely made-up word). What color is loud?
+                    </p>
+                    <p>
+                      The experiment then posed the same questions of large language models (LLMs).The researchers wanted to know: Do you need real, lived, sensory experience to connect a concept to a color? Or, can a machine that is only trained to identify patterns in text answer reason the same way that humans do?
+                    </p>
+                    <p>
+                      The experiment got a bit famous for asking: "What color is loud?" That question is how this project started. But why it matters is Julia.
+                    </p>
+                    <p>
+                      It turns out that statistical pattern matching can get you surprisingly far. Many of us associate anger with red, and math with blue. LLMs are impressively good at making these types of connections based only on probability.
+                    </p>
+                    <p>
+                      But when a concept is something novel, like a fictional word, or ineffable, like Julia, a machine has no textual clues to draw from. Humans show surprisingly strong agreement on associating very unlikely concepts with colors. Gricker is gray. Biology is Green. And the opposite of math is pink. And, that is where embodied experience, memory, and relationship make us distinctly human in our ability to draw common relationships.
+                    </p>
+                    <p>
+                      This little experiment is a way of sharing something uniquely human about Julia in honor of her 40th birthday. It is both a celebration of her and also an experiment to see if our embodied sense of Julia is similar...
+                    </p>
+                    <p className="font-medium">
+                      So here's the prompt, borrowed from the study but modified slightly:
+                    </p>
+                    <p className="font-medium">
+                      What color is Lowd?
+                    </p>
+                    <p>Fill out the form and then check answers from her friends and family below.</p>
                   </div>
                 </div>
               </div>
