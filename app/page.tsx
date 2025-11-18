@@ -114,7 +114,7 @@ export default function HomePage() {
                   <div className="text-xs sm:text-sm opacity-80 leading-relaxed space-y-3">
                     <p><strong>TLDR:</strong> Chose the color that captures your experience of Julia Lowd, upload a photo, and leave her a birthday message.</p>
                     <p>
-                      <strong>The Experiment:</strong> A recent cognitive science study asked people to relate abstract concepts to colors: What color is anger? What color is math? What color is gricker? (a completely made-up word). What color is loud?
+                      <strong>The Experiment:</strong> A recent <a href="https://onlinelibrary.wiley.com/doi/10.1111/cogs.70083" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">cognitive science study</a> asked people to relate abstract concepts to colors: What color is anger? What color is math? What color is gricker? (a completely made-up word). What color is loud?
                     </p>
                     <p>
                       The experiment then posed the same questions of large language models (LLMs).The researchers wanted to know: Do you need real, lived, sensory experience to connect a concept to a color? Or, can a machine that is only trained to identify patterns in text answer reason the same way that humans do?
